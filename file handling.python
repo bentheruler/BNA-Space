@@ -1,0 +1,47 @@
+# file_handling_assignment.py
+
+def create_and_write_file():
+    try:
+        with open("my_file.txt", "w") as file:
+            file.write("Line 1: This is the first line.\n")
+            file.write("Line 2: The number is 42.\n")
+            file.write("Line 3: The quick brown fox jumps over 13 lazy dogs.\n")
+        print("File created and initial lines written successfully.")
+    except PermissionError:
+        print("Permission denied: Unable to write to file.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+def read_and_display_file():
+    try:
+        with open("my_file.txt", "r") as file:
+            content = file.read()
+            print("Reading file contents:")
+            print(content)
+    except FileNotFoundError:
+        print("File not found: Please ensure 'my_file.txt' exists.")
+    except PermissionError:
+        print("Permission denied: Unable to read the file.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+def append_to_file():
+    try:
+        with open("my_file.txt", "a") as file:
+            file.write("Line 4: Appending new text.\n")
+            file.write("Line 5: Adding another number: 99.\n")
+            file.write("Line 6: End of the appended lines.\n")
+        print("Additional lines appended successfully.")
+    except PermissionError:
+        print("Permission denied: Unable to append to file.")
+    except Exception as e:
+        print(f"An unexpected error occurred: {e}")
+
+def main():
+    create_and_write_file()
+    read_and_display_file()
+    append_to_file()
+    read_and_display_file()
+
+if __name__ == "__main__":
+    main()
