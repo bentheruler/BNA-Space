@@ -1,0 +1,55 @@
+body {
+    /* Set the background image */
+    background-image: url('Remote\ Communication\ Mistakes\ to\ Avoid\ When\ Managing\ a\ Team.jpeg');
+    /* Set background size to cover entire viewport */
+    background-size: cover;
+    /* Center the background image */
+    background-position: center;
+    /* Set background attachment to fixed for a fixed background */
+    background-attachment: fixed;
+  }
+nav {
+    padding: 10px 0;
+    text-align: justify;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+nav a:hover {
+    background-color: #555;
+}
+section {
+    color: rgb(204, 210, 215);
+    padding: 20px;
+}
+ul {
+    color: aqua;
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    color: rgb(178, 194, 194);
+    margin-bottom: 10px;
+}
+p{
+    color: rgb(226, 235, 232);
+}
+a{
+    color: aliceblue;
+}
+  
+  /* Additional styling for the form elements */
+  header {
+    color: rgb(161, 172, 183);
+    text-align: justify;
+  }
+  
+  form {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    border-radius: 10px;
+  }
